@@ -1,0 +1,32 @@
+{
+  "name": "@namespace/one",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Alexander Milevski <alexander@linkurio.us>",
+  "homepage": "",
+  "main": "dist/index.js",
+  "module": "dist/index-esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "ISC",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://nexus3.linkurious.net/repository/npm/"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "typehead build",
+    "watch": "typehead build --watch",
+    "serve": "typehead serve",
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "@mapbox/typehead": "^1.0.3",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "tinyqueue": "^2.0.3"
+  }
+}
