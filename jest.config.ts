@@ -184,6 +184,7 @@ export default {
   //   "/node_modules/",
   //   "\\.pnp\\.[^\\/]+$"
   // ],
+  // https://stackoverflow.com/a/57916712
   transformIgnorePatterns: ['node_modules/(?!(delaunator|robust-predicates)/)'],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
