@@ -4,20 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --ext .js,.ts"
+    "test": "lerna run test",
+    "lint": "eslint --ext .js,.ts",
+    "build": "lerna run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/plugin-transform-modules-commonjs": "^7.16.5",
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.12",
+    "@types/node": "^16.11.13",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
-    "babel-jest": "^27.4.5",
     "cross-env": "^7.0.3",
     "eslint": "^8.4.1",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -25,7 +23,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.4.5",

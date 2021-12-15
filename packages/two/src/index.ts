@@ -6,10 +6,11 @@ function t() {
     [0, 0],
     [1, 0],
     [0, 1]
-  ]);
+  ]).coords;
 }
 
 export default function a() {
-  t();
-  return one();
+  one();
+  return t();
+  //return one();
 }

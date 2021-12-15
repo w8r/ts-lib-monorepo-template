@@ -1,7 +1,7 @@
-import lib from '../src/';
+import lib from '../dist/';
 
 describe('@namespace/one', () => {
   it('needs tests', () => {
-    console.log(lib());
+    expect(lib().length).toBe(2);
   });
 });

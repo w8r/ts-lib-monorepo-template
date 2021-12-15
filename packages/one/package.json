@@ -13,14 +13,21 @@
     "dist"
   ],
   "scripts": {
+    "pretest": "npm run build:ts",
     "test": "jest",
-    "build": "typehead build",
+    "build:esbuild": "typehead build",
+    "build:ts": "tsc",
+    "build": "npm run build:esbuild && npm run build:ts",
     "watch": "typehead build --watch",
     "serve": "typehead serve",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "npm run build:ts"
   },
   "devDependencies": {
     "@mapbox/typehead": "^1.0.3",
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.1",
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
   "dependencies": {
