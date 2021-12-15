@@ -19,7 +19,8 @@
     "build:ts": "tsc",
     "build": "npm run build:esbuild && npm run build:ts",
     "watch": "typehead build --watch",
-    "serve": "typehead serve",
+    "start": "typehead serve",
+    "lint": "eslint --ext .js,.ts",
     "prepublishOnly": "npm run build:ts"
   },
   "devDependencies": {
