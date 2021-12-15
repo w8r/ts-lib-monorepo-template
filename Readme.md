@@ -10,3 +10,5 @@ $ npm run build  # build all packages
 $ npm t          # run all tests
 $ npm -w packages/<name> start # run a package's demo
 ```
+
+Make sure you have renamed the `@namespace/` in your packages properly
